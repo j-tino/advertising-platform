@@ -78,14 +78,14 @@ These are the endpoints available in this project for managing notes. You can te
   ```JSON 
   { 
     "title": "Note Title", 
-    "content": "Note Content" 
+    "body": "Note Body" 
   }
   ```
 - **PUT /notes/{id}**: Update an existing note by ID
     ```JSON 
     { 
       "title": "Note Title EDITED", 
-      "content": "Note Content EDITED" 
+      "body": "Note Body EDITED" 
     }
     ```
 - **DELETE /notes/{id}**: Delete a note by ID
