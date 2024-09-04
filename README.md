@@ -42,7 +42,7 @@ When using the file storage profile, notes are saved to a JSON file on disk. Upo
 
 ## Running the Application
 
-You can run the application using Maven or by deploying the JAR file with Java 21. To deploy the JAR file, navigate to the target/ directory where the JAR file is generated. You can either run the file directly from this directory or copy it to another location for execution.
+You can run the application using Maven or by deploying the JAR file with Java 21. To deploy the JAR file, navigate to the `target/` directory where the JAR file is generated. You can either run the file directly from this directory or copy it to another location for execution.
 ### In-Memory Database
 
 To run the application using the in-memory database:
