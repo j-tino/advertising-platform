@@ -49,7 +49,7 @@ To run the application using the in-memory database:
 
 - Using Maven:
     ```bash
-    mvn spring-boot:run -Dspring-boot.run.profiles=database
+    mvn spring-boot:run -D spring-boot.run.profiles=database
     ```
 - Using the JAR file:
     ```bash
@@ -62,7 +62,7 @@ To run the application using file storage:
 
 - Using Maven:
     ```bash
-    mvn spring-boot:run -Dspring-boot.run.profiles=file
+    mvn spring-boot:run -D spring-boot.run.profiles=file
     ```
 - Using the JAR file:
     ```bash
