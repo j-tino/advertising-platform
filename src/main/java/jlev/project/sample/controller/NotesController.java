@@ -29,7 +29,7 @@ public class NotesController {
       protected static final String REQUEST_MAPPING = "/notes";
       private final NotesService notesService;
 
-      @PostMapping("/")
+      @PostMapping()
       public ResponseEntity<Object> create(@RequestBody Notes notes) {
          if (notes.getTitle() == null || notes.getTitle().isEmpty() || notes.getBody() == null || notes.getBody().isEmpty()) {
             throw new BadRequestException("Invalid Input", "Title or Body cannot be empty");
@@ -43,7 +43,7 @@ public class NotesController {
          }
       }
 
-      @GetMapping("/")
+      @GetMapping()
       public ResponseEntity<List<Notes>> findAll() {
          List<Notes> notes = notesService.findAll();
 
