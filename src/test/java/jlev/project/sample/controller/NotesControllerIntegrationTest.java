@@ -31,7 +31,7 @@ public class NotesControllerIntegrationTest {
    @Test
    @Order(1)
    public void testEndpointCreated_whenUrlAndBodyIsValid_thenCreateNotes() {
-      String url = "http://localhost:" + port + "/notes/";
+      String url = "http://localhost:" + port + "/notes";
 
       Notes newNote = new Notes();
       newNote.setTitle("Test Note");
@@ -64,7 +64,7 @@ public class NotesControllerIntegrationTest {
    @Test
    @Order(3)
    public void testEndpointGet_whenUrlIsValid_thenReturnAllNotes() {
-      String url = "http://localhost:" + port + "/notes/";
+      String url = "http://localhost:" + port + "/notes";
 
       ResponseEntity<List> response = restTemplate.getForEntity(url, List.class);
 
@@ -105,7 +105,7 @@ public class NotesControllerIntegrationTest {
    //NEGATIVE TESTS
    @Test
    public void testEndpointCreated_whenUrlAndBodyIsiNValid_thenThrowException() {
-      String url = "http://localhost:" + port + "/notes/";
+      String url = "http://localhost:" + port + "/notes";
 
       Notes newNote = new Notes();
       newNote.setTitle(null);
