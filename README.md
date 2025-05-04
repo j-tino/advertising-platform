@@ -1,3 +1,5 @@
+![Repo Views](https://visitor-badge.laobi.icu/badge?page_id=j-tino.advertising-platform)
+
 # Advertising Platform - Notes API
 
 This project is a simple REST API for managing notes. The project is built using Maven and allows storing notes in two different ways: either in an in-memory database or in a file. You can choose the storage method by selecting the appropriate Maven profile.
